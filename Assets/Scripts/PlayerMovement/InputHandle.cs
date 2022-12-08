@@ -27,23 +27,23 @@ public class InputHandle : MonoBehaviour
 
     }
     public void FixedUpdate()
-    {
-        characterController.Move(new Vector3(input_Movement.x, 0 , input_Movement.y )*speed * Time.deltaTime);
+    {   
+    //    characterController.Move(new Vector3(input_Movement.x, 0 , input_Movement.y )*speed * Time.deltaTime);
         Debug.Log(jumped);
-        Jumped();
+       // Jumped();
     }
-    void Jumped()
-    {
-        if(jumped)
-        {
-            characterController.Move(new Vector3( 0 , 11f, 0 ) * Time.deltaTime);
-        }
-        else
-        {
-            characterController.Move(new Vector3( 0 , -11f, 0 ) * Time.deltaTime);
+   // void Jumped()
+   // {
+   //     if(jumped)
+     //   {
+       //     characterController.Move(new Vector3( 0 , 11f, 0 ) * Time.deltaTime);
+       // }
+      //  else
+       // {
+          //  characterController.Move(new Vector3( 0 , -9.8f, 0 ) * Time.deltaTime);
 
-        }
-    }
+       // }
+   // }
 
 
     
